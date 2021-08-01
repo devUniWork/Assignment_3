@@ -140,9 +140,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Assignment_3.cpp" />
+    <ClCompile Include="ErrorHandler.cpp" />
     <ClCompile Include="ExtractValuesFile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ErrorHandler.h" />
     <ClInclude Include="ExtractValuesFile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
