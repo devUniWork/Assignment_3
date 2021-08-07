@@ -140,12 +140,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Assignment_3.cpp" />
+    <ClCompile Include="AVL.cpp" />
+    <ClCompile Include="AvlQuestion.cpp" />
+    <ClCompile Include="BFS.cpp" />
     <ClCompile Include="ErrorHandler.cpp" />
     <ClCompile Include="ExtractValuesFile.cpp" />
+    <ClCompile Include="MaxHeapQuestion.cpp" />
+    <ClCompile Include="utility.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AVL.h" />
+    <ClInclude Include="AvlQuestion.h" />
+    <ClInclude Include="BFS.h" />
     <ClInclude Include="ErrorHandler.h" />
     <ClInclude Include="ExtractValuesFile.h" />
+    <ClInclude Include="MaxHeapQuestion.h" />
+    <ClInclude Include="utility.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
