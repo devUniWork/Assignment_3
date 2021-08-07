@@ -3,9 +3,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-
-
-
+#include "MaxHeapQuestion.h";
 #include "AvlQuestion.h";
 
 using namespace std;
@@ -18,12 +16,18 @@ int main() {
 
 	const struct AVLFILENAME {
 		const string InputFileName = "input-q1a2.txt";
+		const string OutputFileName = "output-q1-a2.txt";
+	};
+
+	const struct MAXHEAPFILENAME {
+		const string InputFileName = "input-q2a2.txt";
 		const string OutputFileName = "output-q2-a2.txt";
 	};
 
 	AvlQuestion avlQuestion;
+	MaxHeapQuestion maxHeapQuestion;
 	AVLFILENAME avlFileName;
-
+	MAXHEAPFILENAME maxHeapFileName;
 
 
 
@@ -40,7 +44,8 @@ int main() {
 			cout << "check for output" << endl;
 		}
 		if (input == MAX_HEAP_QUESTION) {
-			cout << "still working on it";
+			maxHeapQuestion.start_max_heap(maxHeapFileName.InputFileName, maxHeapFileName.OutputFileName);
+			cout << "check for output" << endl;
 		}
 	}
 	cout << "please enter valid input" << endl;
