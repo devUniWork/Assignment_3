@@ -12,5 +12,5 @@ void AvlQuestion::start_insert(string InputFileName, string OutputFileName) {
        avl.root = avl.insert(avl.root, dataElements[i]);
    }
    bfs.printLevelOrder(avl.root, OutputFileName);
-
+   delete[] dataElements;
 }
