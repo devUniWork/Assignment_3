@@ -1,3 +1,4 @@
+// student no: A00030840
 #include "AVL.h"
 
 int AVL::getHeight(node* node) {
