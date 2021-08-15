@@ -50,7 +50,4 @@ int main() {
 	}
 	cout << "please enter valid input" << endl;
 	return 0;
-
-
-    return 0;
 }
