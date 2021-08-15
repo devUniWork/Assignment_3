@@ -143,7 +143,6 @@
     <ClCompile Include="AVL.cpp" />
     <ClCompile Include="AvlQuestion.cpp" />
     <ClCompile Include="BFS.cpp" />
-    <ClCompile Include="BFSMaxHeap.cpp" />
     <ClCompile Include="ErrorHandler.cpp" />
     <ClCompile Include="ExtractValuesFile.cpp" />
     <ClCompile Include="MaxHeap.cpp" />
@@ -154,7 +153,6 @@
     <ClInclude Include="AVL.h" />
     <ClInclude Include="AvlQuestion.h" />
     <ClInclude Include="BFS.h" />
-    <ClInclude Include="BFSMaxHeap.h" />
     <ClInclude Include="ErrorHandler.h" />
     <ClInclude Include="ExtractValuesFile.h" />
     <ClInclude Include="MaxHeap.h" />

@@ -2,13 +2,10 @@
 #define AVL_H
 #include <iostream>
 #include <algorithm>
+#include <string> 
+#include <iostream>
 
 #include "utility.h"
-
-#include <string> 
-
-
-#include <iostream>
 
 using namespace std;
 
