@@ -1,6 +1,7 @@
 // student no: A00030840
 #include "AVL.h"
 
+// get the height of the tree
 int AVL::getHeight(node* node) {
 		if (node == NULL)
 			return 0;
@@ -16,7 +17,7 @@ int AVL::getHeight(node* node) {
 			}
 		}
 }
-
+// return balance factor of the tree
 int AVL::getBalanceFactor(struct node* N)
 {
 	if (N == NULL)
@@ -80,7 +81,7 @@ struct node* AVL::leftRightRotation(struct node* n) {
 	return tp2;
 }
 
-
+// return node 
 struct node* AVL::insert(struct node* r, int data) {
 
 	if (r == NULL) {
@@ -100,16 +101,19 @@ struct node* AVL::insert(struct node* r, int data) {
 	}
 
 	r->height = getHeight(r);
-
+	// perform left rotation
 	if (getBalanceFactor(r) == 2 && getBalanceFactor(r->left) == 1) {
 		r = leftRotation(r);
 	}
+	// perform right rotation
 	else if (getBalanceFactor(r) == -2 && getBalanceFactor(r->right) == -1) {
 		r = rightRotation(r);
 	}
+	// perform right left rotation
 	else if (getBalanceFactor(r) == -2 && getBalanceFactor(r->right) == 1) {
 		r = rightLeftRotation(r);
 	}
+	// perform left right rotation
 	else if (getBalanceFactor(r) == 2 && getBalanceFactor(r->left) == -1) {
 		r = leftRightRotation(r);
 	}
