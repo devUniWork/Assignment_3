@@ -5,16 +5,12 @@
 void MaxHeapQuestion::start_max_heap(string InputFileName, string OutputFileName) {
 	int numberElements = extractValues.number_elements(InputFileName);
 	int *dataElements = new int[numberElements];
-	int *outputMaxHeap = new int[numberElements];
 	int iterations = 0;
 	int pointer = 0;
 
 	MaxHeap maxHeap;
 
 	dataElements = extractValues.get_elements(InputFileName, numberElements);
-	// to create file.
-	utility.writeToLastLine(OutputFileName, "");
-
 
 	for (int i = 0; i < numberElements; i++) {
 		maxHeap.insert(dataElements[i]);
@@ -41,4 +37,5 @@ void MaxHeapQuestion::start_max_heap(string InputFileName, string OutputFileName
 			utility.writeToLastLine(OutputFileName, "\n");
 		}
 	}
+	delete[] dataElements;
 }
